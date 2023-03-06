@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #ffffff;
+	font: sans-serif;
+}
+
+
+/*------------------------
+	Header And Navbar
+--------------------------*/
+header{
+	padding: 0px 120px;
+	height: 55px;
+	background-color: #F1F1F1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	letter-spacing: 1px;
+	box-shadow: rgba(0,0,0, 0.1) 4px 4px 8px;
+}
+
+header div{ font-size: 18px; }
+header div:first-letter{
+	margin: 2px 1px;
+	padding: 3px 2px;
+	color: #f3f3f3;
+	background: blueviolet;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+nav ul > li{
+	padding: 4px 8px;
+	display: inline-block;
+	list-style-type: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+nav ul > li a{
+	user-select: none;
+	text-decoration: none;
+	color: #333;
+}
+
+nav ul > li.selected a{
+	color: blueviolet;
+	border-bottom: 2px solid blueviolet;
+}
+
+
+/*-------------
+	MAIN
+---------------*/
+.main{
+	height: 92vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main div{
+	margin: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main div:nth-child(1){
+	width: fit-content;
+	padding: 10px 25px;
+	color: #333;
+	background: #fff;
+
+	font-size: 18px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+
+	border: 2px solid #333;
+	border-radius: 4px;
+}
+
+.main div button {
+	padding: 10px 25px;
+	color: #333;
+	background-color: #ffffff;
+	font-size: 14px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: rgba(0,0,0,0.4) 4px 4px 8px;
+}
+
+.main div button:hover{
+	color: #ffffff;
+	background-color: #333;
+}
+
+.main div button:active{
+	box-shadow: rgba(0,0,0,0.2) 2px 2px 4px;
+}
+
+
