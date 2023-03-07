@@ -27,16 +27,16 @@ body{
 	transform: translate(0,-6px);
 }
 .side-bar-bg{
+	z-index: 1;
+	display: none;
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.35);
-	/*display: none;*/
-	z-index: 1;
 }
 .side-bar{
 	float: left;
 	padding: 28px 20px;
-	width: 20vw;
+	width: 320px;
 	height: 100vh;
 	background-color: #e8e8e8;
 	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.05);
