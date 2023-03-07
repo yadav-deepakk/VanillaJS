@@ -3,35 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script type="text/javascript" src="scripts.js" defer></script>
-
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script type="text/javascript" src="./scripts.js" defer></script>
 	<title>5) Side Bar</title>
 </head>
 <body>
 
-	<div class="side-bar-bg">
-		<div class="side-bar">
+	<aside id="side-bar">
+		<div class="side-bar-content">
 			<div class="side-bar-header">
-				<div>SIDEBAR HEADING</div>
+				<div class="heading">Side Bar Heading</div>
+				<span class="close-side-bar">&times</span>
 			</div>
-			<ul>
-				<li class="active" onclick="makeActiveLink(this)"><a href="#">Home</a></li>
-				<li onclick="makeActiveLink(this)"><a href="#">About</a></li>
-				<li onclick="makeActiveLink(this)"><a href="#">Project</a></li>
-				<li onclick="makeActiveLink(this)"><a href="#">Contact</a></li>
-			</ul>
+			<div class="side-bar-body">
+				<ul>
+					<li class="active" onclick="makeActiveLink(this)"><a href="#">Home</a></li>
+					<li onclick="makeActiveLink(this)"><a href="#">Projects</a></li>
+					<li onclick="makeActiveLink(this)"><a href="#">Testimonials</a></li>
+					<li onclick="makeActiveLink(this)"><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="close-side-bar">
-			<div></div>
-			<div></div>
-		</div>
-	</div>
+	</aside>
 
 	<header>
-		<nav>
-			<div class="hamburger-menu">
+		<nav class="flex-box-start">
+			<div class="hamburger-menu" onclick="document.querySelector('#side-bar').style.display = 'block';">
 				<div></div>
 				<div></div>
 				<div></div>
