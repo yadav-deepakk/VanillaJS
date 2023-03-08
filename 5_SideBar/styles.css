@@ -32,6 +32,9 @@ body{
 	background-color: #e8e8e8;
 	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.05);
 	box-sizing: border-box;
+
+	animation-name: sideBarIn;
+	animation-duration: 0.3s;
 }
 .side-bar-header{
 	color: #333;
@@ -72,6 +75,14 @@ body{
 	text-decoration: none;
 	color: #333;
 	text-transform: uppercase;
+}
+
+/*------------------------
+	SIDE BAR ANIMATION
+--------------------------*/
+@keyframes sideBarIn{
+	from{ transform: translateX(-30%); opacity:0; }
+	to{transform: translateX(0); opacity:1;}
 }
 
 /*----------------------
