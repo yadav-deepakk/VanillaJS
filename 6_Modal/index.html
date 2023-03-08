@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script type="text/javascript" src="./scripts.js" defer></script>
+	<title>6) Modal</title>
+</head>
+<body>
+
+	<section id='modal'>
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title">MODAL TITLE</div>
+				<span class="close-modal" onclick="document.querySelector('#modal').style.display = 'none'">&times</span>
+			</div>
+			<div class="modal-body">
+				<p>Modal Body</p>
+			</div>
+			<div class="modal-footer">
+				<button	onclick="document.querySelector('#modal').style.display='none'">Cancel</button>
+				<button onclick="document.querySelector('#modal').style.display='none'">OK</button>
+			</div>
+		</div>
+	</section>
+
+	<main class="flex-box">
+		<button class="btn btn-outline" onclick="document.querySelector('#modal').style.display='block'">Launch Modal</button>
+	</main>
+
+	<footer></footer>
+
+</body>
+</html>

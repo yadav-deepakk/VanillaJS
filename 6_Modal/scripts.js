@@ -1,0 +1,3 @@
+function toggleModal(ele, eid){
+	
+}
